@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <item name="name" value="un-named user" />
+  <item name="he" value="somebody" />
+  <item name="she" value="somebody" />
+  <item name="it" value="something" />
+  <item name="they" value="something" />
+  <item name="age" value="unknown" />
+  <item name="birthday" value="unknown" />
+  <item name="boyfriend" value="unknown" />
+  <item name="brother" value="unknown" />
+  <item name="cat" value="unknown" />
+  <item name="does" value="unknown" />
+  <item name="dog" value="unknown" />
+  <item name="email" value="unknown" />
+  <item name="father" value="unknown" />
+  <item name="favcolor" value="unknown" />
+  <item name="favmovie" value="unknown" />
+  <item name="friend" value="unknown" />
+  <item name="fullname" value="unknown" />
+  <item name="gender" value="unknown" />
+  <item name="girlfriend" value="unknown" />
+  <item name="has" value="unknown" />
+  <item name="heard" value="unknown" />
+  <item name="husband" value="unknown" />
+  <item name="is" value="unknown" />
+  <item name="job" value="unknown" />
+  <item name="lastname" value="unknown" />
+  <item name="like" value="unknown" />
+  <item name="location" value="unknown" />
+  <item name="looklike" value="unknown" />
+  <item name="memory" value="unknown" />
+  <item name="meta" value="unknown" />
+  <item name="nickname" value="unknown" />
+  <item name="middlename" value="unknown" />
+  <item name="mother" value="alice" />
+  <item name="password" value="unknown" />
+  <item name="personality" value="unknown" />
+  <item name="phone" value="unknown" />
+  <item name="sign" value="unknown" />
+  <item name="sister" value="unknown" />
+  <item name="them" value="unknown" />
+  <item name="thought" value="unknown" />
+  <item name="want" value="unknown" />
+  <item name="we" value="unknown" />
+  <item name="canon"  value="imageRUNNER 1023"/>
+  <item name="canon1" value="imageRUNNER 1023 N"/>
+  <item name="canon2" value="imageRUNNER 1023 iF"/>
+  <item name="canon3" value="imageRUNNER 1025"/>
+  <item name="canon4" value="imageRUNNER 1025N"/>
+  <item name="canon5" value="imageRUNNER 1025iF"/>
+  <item name="canon6" value="imageRUNNER 1730"/>
+  <item name="canon7" value="imageRUNNER 1730iF"/>
+  <item name="canon8" value="imageRUNNER 1740"/>
+  <item name="canon9" value="imageRUNNER 1740iF"/>
+  <item name="canon10" value="imageRUNNER 1750"/>
+  <item name="canon11" value="imageRUNNER 1750iF"/>
+  <item name="canon12" value="imageRUNNER 2525"/>
+  <item name="canon13" value="imageRUNNER 2530"/>
+  <item name="canon14" value="imageRUNNER 2535"/>
+  <item name="canon15" value="imageRUNNER 2535i"/>
+  <item name="canon16" value="imageRUNNER 2545"/>
+  <item name="canon17" value="imageRUNNER 2545i"/>
+  <item name="canon18" value="imageRUNNER 3035"/>
+  <item name="canon19" value="imageRUNNER 3045"/>
+  <item name="canon20" value="imageRUNNER 3235"/>
+  <item name="canon21" value="imageRUNNER 3235i"/>
+  <item name="canon22" value="imageRUNNER 3245"/>
+  <item name="canon23" value="imageRUNNER 3245 i"/>
+  <item name="canon24" value="imageRUNNER 3570 "/>
+  <item name="canon25" value="imageRUNNER 4570 "/>
+  <item name="canon26" value="imageRUNNER 3530"/>
+  <item name="canon27" value="imageRUNNER 3245i"/>
+  <item name="canon28" value="Color imageRUNNER C1022"/>
+  <item name="canon29" value="Color imageRUNNER C1022i"/>
+  <item name="canon30" value="Color imageRUNNER C1030"/>
+  <item name="canon31" value="Color imageRUNNER C1030iF"/>
+  <item name="canon32" value="imageRUNNER ADVANCE C2020"/>
+  <item name="canon33" value="imageRUNNER ADVANCE C2225"/>
+  <item name="canon34" value="imageRUNNER ADVANCE C2230"/>
+  <item name="canon35" value="imageRUNNER ADVANCE C2030"/>
+  <item name="canon36" value="Color imageRUNNER C3080i"/>
+  <item name="canon37" value="Color imageRUNNER C2880"/>
+  <item name="canon38" value="Color imageRUNNER C2880i"/>
+  <item name="canon39" value="Color imageRUNNER C3080"/>
+  <item name="canon40" value="Color imageRUNNER C3080i"/>
+  <item name="canon41" value="Color imageRUNNER C3480i "/>
+  <item name="canon42" value="imageRUNNER ADVANCE C5235"/>
+  <item name="canon43" value="imageRUNNER ADVANCE C5240"/>
+  <item name="canon44" value="imageRUNNER ADVANCE C5250"/>
+  <item name="canon45" value="imageRUNNER ADVANCE C5255"/>
+  <item name="canon46" value="imageRUNNER ADVANCE C5045"/>
+  <item name="canon47" value="imageRUNNER ADVANCE C5051"/>
+  <item name="canon48" value="imageRUNNER ADVANCE C5030"/>
+  <item name="canon49" value="imageRUNNER ADVANCE C5035"/>
+  <item name="canon50" value="imageRUNNER ADVANCE C7260"/>
+  <item name="canon51" value="imageRUNNER ADVANCE C7065"/>
+  <item name="canon52" value="imageRUNNER ADVANCE C7055"/>
+  <item name="canon53" value="imageRUNNER ADVANCE C7270"/>
+  <item name="canon54" value="imageRUNNER ADVANCE C9065 PRO"/>
+  <item name="canon55" value="imageRUNNER ADVANCE C9065S PRO"/>
+  <item name="canon56" value="imageRUNNER ADVANCE C9075 PRO"/>
+  <item name="canon57" value="imageRUNNER ADVANCE C9075S PRO"/>
+  <item name="canon58" value="imageRUNNER ADVANCE C9270 PRO"/>
+  <item name="canon59" value="imageRUNNER ADVANCE C9280 PRO"/>
+  <item name="canon60" value="imageRUNNER ADVANCE 400iF"/>
+  <item name="canon61" value="imageRUNNER ADVANCE 500iF"/>
+  <item name="canon62" value="imageRUNNER ADVANCE 4025"/>
+  <item name="canon63" value="imageRUNNER ADVANCE 4035"/>
+  <item name="canon64" value="imageRUNNER ADVANCE 4225"/>
+  <item name="canon65" value="imageRUNNER ADVANCE 4235"/>
+  <item name="canon66" value="imageRUNNER ADVANCE 6055"/>
+  <item name="canon67" value="imageRUNNER ADVANCE 6065"/>
+  <item name="canon68" value="imageRUNNER ADVANCE 6075"/>
+  <item name="canon69" value="imageRUNNER ADVANCE 6255"/>
+  <item name="canon70" value="imageRUNNER ADVANCE 6265"/>
+  <item name="canon71" value="imageRUNNER ADVANCE 6275"/>
+  <item name="canon72" value="imageRUNNER 7086"/>
+  <item name="canon73" value="imageRUNNER 7095"/>
+  <item name="canon74" value="imageRUNNER 7095 Printer"/>
+  <item name="canon75" value="imageRUNNER ADVANCE 8085"/>
+  <item name="canon76" value="imageRUNNER ADVANCE 8095"/>
+  <item name="canon77" value="imageRUNNER ADVANCE 8105"/>
+  <item name="canon78" value="imageRUNNER ADVANCE 8205"/>
+  <item name="canon79" value="imageRUNNER ADVANCE 8285"/>
+  <item name="canon80" value="imageRUNNER ADVANCE 8295"/>
+  <item name="sharp" value="MX-6240N"/>
+  <item name="sharp1" value="MX-7040N"/>
+  <item name="sharp2" value="MX-M904"/>
+  <item name="sharp3" value="MX-M1054"/>
+  <item name="sharp4" value="MX-M1204"/>
+  <item name="sharp5" value="MX-M314N"/>
+  <item name="sharp6" value="MX-M354N"/>
+  <item name="sharp7" value="MX-2610N"/>
+  <item name="sharp8" value="MX-2615N"/>
+  <item name="sharp9" value="MX-2616N"/>
+  <item name="sharp10" value="MX-2640N"/>
+  <item name="sharp11" value="MX-C250"/>
+  <item name="sharp12" value="MX-C300W"/>
+  <item name="sharp13" value="MX-C232D"/>
+  <item name="sharp14" value="MX-C262N"/>
+  <item name="sharp15" value="MX-C283"/>
+  <item name="ricoh" value="RECHO Mpc 3000"/>
+  <item name="ricoh1" value="RECHO Mpc 4500"/>
+  <item name="ricoh2" value="RECHO LD 550C"/>
+  <item name="ricoh3" value="RECHO 2075"/>
+  <item name="ricoh4" value="RICHO aficio 1075"/>
+  <item name="ricoh5" value="RICHO Mpc 4000"/>
+  <item name="ricoh6" value="RICHO Fr391"/>
+  <item name="ricoh7" value="RICHO Aficio Mpc 6000 "/>
+  <item name="ricoh8" value="RICHO MPC2500"/>
+  <item name="ricoh9" value="RICHO MPC3500"/>
+  <item name="ricoh10" value="RICOH AFICIO 1018"/>
+  <item name="ricoh11" value="RICOH MPC 3010"/>
+  <item name="ricoh12" value="RICHO 2027"/>
+  <item name="ricoh13" value="RICHO MPC5000"/>
+  <item name="ricoh14" value="MX-C262N"/>
+  <item name="toshiba" value="Toshiba e-Studio-18"/>
+  <item name="toshiba1" value="Toshiba e-Studio-2006"/>
+  <item name="toshiba2" value="Toshiba e-Studio-223"/>
+  <item name="toshiba3" value="Toshiba e-Studio-223"/>
+  <item name="toshiba4" value="Toshiba e-Studio-223N"/>
+  <item name="toshiba5" value="Toshiba e-Studio-223iF"/>
+  <item name="toshiba6" value="Toshiba e-Studio-243"/>
+  <item name="toshiba7" value="Toshiba e-Studio-256"/>
+  <item name="toshiba8" value="Toshiba e-Studio-306"/>
+  <item name="toshiba9" value="Toshiba e-Studio-456 With RADF"/>
+  <item name="toshiba10" value="Toshiba e-Studio 256SE"/>
+  <item name="toshiba11" value="Toshiba e-Studio 2306"/>
+  <item name="toshiba12" value="Toshiba e-Studio 2051C"/>
+  <item name="toshiba13" value="Toshiba e-studio 456SE"/>
+  <item name="toshiba14" value="Toshiba e-Studio 211"/>
+  <item name="toshiba15" value="Toshiba e-Studio 2505"/>
+  <item name="toshiba16" value="Toshiba e-Studio 2506"/>
+  <item name="toshiba17" value="Toshiba e-Studio 2507"/>
+  <item name="toshiba18" value="Toshiba e-Studio 2508"/>
+  <item name="toshiba19" value="Toshiba e-Studio 2510"/>
+  <item name="toshiba20" value="Toshiba e-Studio 2511"/>
+  <item name="toshiba21" value="Toshiba e-Studio 2512"/>
+  <item name="toshiba22" value="Toshiba e-Studio 2513 "/>
+  <item name="toshiba23" value="Toshiba e-Studio 2514 "/>
+  <item name="toshiba24" value="Toshiba e-Studio 2515 "/>
+  <item name="toshiba25" value="Toshiba e-Studio 2516 "/>
+  <item name="toshiba26" value="Toshiba e-Studio 2517 "/>
+  <item name="toshiba27" value="Toshiba e-Studio 2518 "/>
+  <item name="toshiba28" value="Toshiba e-Studio 2519 "/>
+  <item name="toshiba29" value="Toshiba e-Studio 2520 "/>
+  <item name="toshiba30" value="Toshiba e-Studio 2521 "/>
+  <item name="toshiba31" value="Toshiba e-Studio 2522 "/>
+  <item name="toshiba32" value="Toshiba e-Studio 2523 "/>
+  <item name="toshiba33" value="Toshiba e-Studio 2524 "/>
+  <item name="toshiba34" value="Toshiba e-Studio 2525 "/>
+  <item name="toshiba35" value="Toshiba e-Studio 2526 "/>
+  <item name="toshiba36" value="Toshiba e-Studio 2527 "/>
+  <item name="toshiba37" value="Toshiba e-Studio 2528 "/>
+  <item name="toshiba38" value="Toshiba e-Studio 2529 "/>
+  <item name="toshiba39" value="Toshiba e-Studio 2530 "/>
+  <item name="toshiba40" value="Toshiba e-Studio 2531 "/>
+  <item name="toshiba41" value="Toshiba e-Studio 2533 "/>
+  <item name="toshiba42" value="Toshiba e-Studio 2534 "/>
+  <item name="toshiba43" value="Toshiba e-Studio 2535 "/>
+  <item name="toshiba44" value="Toshiba e-Studio 2536"/>
+  <item name="canonbrand" value="Canon"/>
+  <item name="canontoner" value="Canon GPR-22 Black Toner Item Code: 0386B003AA"/>
+  <item name="canonmanufacturar" value="Canon"/>
+  <item name="canonorigin" value="Japan"/>
+  <item name="canonstatus" value="new"/>
+  <item name="canontype" value="Toner base"/>
+  <item name="canonpacking" value="Single packing"/>
+  <item name="canondelivery" value="purchase 1-2 day after payment"/>
+  <item name="canonparts" value="EWB"/>
+  <item name="canonstyle" value="ink"/>
+  <item name="canonpagepertoner" value="12354"/>
+  <item name="canonprice" value="91718"/>
+  <item name="canonsupplierid" value="1"/>
+  <item name="canonsuppliername" value="Canon"/>
+  <item name="canonsupplierorigin" value="China"/>
+  <item name="canonsupplierdelivery" value="1-2 days"/>
+</root>

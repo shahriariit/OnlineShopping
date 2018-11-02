@@ -1,0 +1,252 @@
+﻿@model MvcStore.Models.Model
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Session["id"] = Model.ModelId; 
+  
+}
+
+
+<script src="~/Scripts/jquery-1.7.1.js"></script>
+<script src="~/Scripts/jquery.jqzoom-core.js"></script>
+<link href="~/Content/StyleCss/jquery.jqzoom.css" rel="stylesheet" /> 
+
+<style type="text/css">
+
+.jqzoom{
+
+	text-decoration:none;
+	float:left;
+}
+
+</style>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.jqzoom').jqzoom({
+            zoomType: 'standard',
+            lens: true,
+            preloadImages: false,
+            alwaysOn: false
+        });
+
+    });
+
+
+</script>
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+        <div class="span2">
+            @{Html.RenderAction("BrandMenu", "Store");}
+        </div>
+
+        <div class="span10">
+            <h2>@Model.ProductName</h2>
+
+            <p>
+               <a href="@Model.ModelZoomUrl"  class="jqzoom" rel='gal1'  title="triumph">
+                    <img src="@Model.ModelSmallUrl" title="triumph"  style="border: 2px solid #666;">
+                </a>
+              
+            </p>
+
+            <fieldset>
+                <legend>Product Details</legend>
+                <div>
+                    <div class="tabbable" style="margin-bottom: 18px;">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1" data-toggle="tab"><b>Product Details</b></a></li>
+                            <li><a href="#tab2" data-toggle="tab"><b>Supplier Details</b></a></li>
+                           
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <div id="album-details">
+                                    <table class="table table-hover stacked">
+                                        <tr>
+                                            <td>
+                                             <b>Brand:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Brand.Name
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Toner:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Toner.Name
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Manufacturer:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Manufacturer
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Origin:</b>
+                                            </td>
+                                            <td>
+                                                @Model.CountryOfOrigin
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Status:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Status
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Type:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Type
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Packing:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Packing
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Compitable Products:</b>
+                                            </td>
+                                            <td>
+                                                @Model.CompatibleModel
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Delivery:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Delivery
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Shipping:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Shipping
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Parts:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Parts
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Page/Toner:</b>
+                                            </td>
+                                            <td>
+                                                @Model.PagePerToner
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Price:</b>
+                                            </td>
+                                            <td>
+                                                @String.Format("{0:F}", Model.Price)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br />
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                               <table class="table table-hover stacked">
+                                    <tr>
+                                            <td>
+                                             <b>Id:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Supplier.SupplierId
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Name:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Supplier.Name
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <b>Origin:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Supplier.Origin
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Delivery:</b>
+                                            </td>
+                                            <td>
+                                                @Model.Supplier.Delivery
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td> @Html.ActionLink("Contact Supplier", "Index", "SendMailer")</td>
+                                        </tr>
+                                   
+                                </table>
+                           
+                        </div>
+                    </div>
+                    <!-- /tabbable -->
+                </div>
+              </div>
+
+              
+            <script src="~/Content/bootstrapjs/bootstrap-tab.js"></script>
+                
+               
+            </fieldset>
+            <br />
+            <p class="btn btn-large btn-warning">
+                @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.ModelId }, "")
+ 
+            </p>
+            <br/>
+            <br/>
+           
+            <p>
+                 @{Html.RenderAction("Others", "Store");}
+            </p>
+
+
+        </div>
+                
+    </div>
+
+</div>
+

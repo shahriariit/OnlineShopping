@@ -1,0 +1,55 @@
+﻿@model MvcStore.Models.Supplier
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Supplier</legend>
+    <table class="tablesorter">
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Name)</td>
+                <td>
+                    @Html.DisplayFor(model => model.Name)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Origin)</td>
+                <td>
+                    @Html.DisplayFor(model => model.Origin)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Manufacturer)</td>
+                <td>
+                    @Html.DisplayFor(model => model.Manufacturer)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Delivery)</td>
+                <td>
+                    @Html.DisplayFor(model => model.Delivery)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Email)</td>
+                <td>
+                    @Html.DisplayFor(model => model.Email)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</fieldset>
+<br />
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SupplierId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

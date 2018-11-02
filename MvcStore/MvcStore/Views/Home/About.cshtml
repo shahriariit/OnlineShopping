@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+
+@section Scripts{
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.js")" type="text/javascript"></script>
+            <script type='text/javascript'>
+                $(document).ready(function () {
+
+                    $("#p1").show();
+                    $("#p2").hide();
+                    $("#p3").hide();
+                    $("#p4").hide();
+                    $("#p5").hide();
+                    $("#p6").hide();
+                    $("#p7").hide();
+                  
+
+
+                    $("#a1").click(function () {
+                        $("#p1").show();
+                        $("#p2").hide();
+                        $("#p3").hide();
+                        $("#p4").hide();
+                        $("#p5").hide();
+                        $("#p6").hide();
+                        $("#p7").hide();
+
+
+                    });
+
+
+                    $("#a2").click(function () {
+                        $("#p1").hide();
+                        $("#p2").show();
+                        $("#p3").hide();
+                        $("#p4").hide();
+                        $("#p5").hide();
+                        $("#p6").hide();
+                        $("#p7").hide();
+
+                    });
+
+                    $("#a3").click(function () {
+                        $("#p1").hide();
+                        $("#p2").hide();
+                        $("#p3").show();
+                        $("#p4").hide();
+                        $("#p5").hide();
+                        $("#p6").hide();
+                        $("#p7").hide();
+
+                    });
+
+                    $("#a4").click(function () {
+                        $("#p1").hide();
+                        $("#p2").hide();
+                        $("#p3").hide();
+                        $("#p4").show();
+                        $("#p5").hide();
+                        $("#p6").hide();
+                        $("#p7").hide();
+
+                    });
+
+                    $("#a5").click(function () {
+                        $("#p1").hide();
+                        $("#p2").hide();
+                        $("#p3").hide();
+                        $("#p4").hide();
+                        $("#p5").show();
+                        $("#p6").hide();
+                        $("#p7").hide();
+
+                    });
+
+                    $("#a6").click(function () {
+                        $("#p1").hide();
+                        $("#p2").hide();
+                        $("#p3").hide();
+                        $("#p4").hide();
+                        $("#p5").hide();
+                        $("#p6").show();
+                        $("#p7").hide();
+
+                    });
+     
+                    $("#a7").click(function () {
+                        $("#p1").hide();
+                        $("#p2").hide();
+                        $("#p3").hide();
+                        $("#p4").hide();
+                        $("#p5").hide();
+                        $("#p6").hide();
+                        $("#p7").show();
+
+                    });
+
+                });
+
+             </script>    
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+        <div class="span2">
+            @Html.Partial("~/Views/Home/AboutMenu.cshtml")
+        </div>
+
+        <div class="span10">
+            <div id="p1">
+                <h3>My Store</h3>
+                 My store is a Online Shopping application in demand of e-commerce and e-business.This site mainly focus on
+                 Photocopier machines with its specific description of products.Besides, this site provides various kind of 
+                 facilities to know about product sales ,delivery and shipping Information. It is mainly sold some popular 
+                 brand of photocopier machines which are Canon,Sharp,Konka,Toshiba.
+                
+                <h3>Features</h3>
+                This aplication is under construction. But This software has to provide more facilities according to customer 
+                demand. So , there are provide some facilites/features which are give it new dimension to
+                provide more better services to the buyer.
+                 
+               <ul>
+                   <li>Details view of products and its related things in demand of customers</li>
+                   <li>Contact facilities with supplier,vendor and website admin.</li>
+                   <li>AI FAQ System which is able to answer customer various query about sites, products and
+                   anything else. In this case, it is mainly use Konwledge base database to frequenly answer
+                   Customer various question.</li>
+                   <li>Tracking User Location and branch of shopping center and
+                   provide shipping/delivery service base on user location.
+                   </li>
+               </ul>
+            
+            </div>
+            <div id="p2">This is paragraph 2</div> 
+            <div id="p3">
+                @Html.Partial("~/Views/Home/Payment.cshtml")
+            </div>
+            <div id="p4">
+                @Html.Partial("~/Views/Home/Shipping.cshtml")
+            </div>
+            <div id="p5">
+                @Html.Partial("~/Views/Home/Condition.cshtml")
+            </div>
+            <div id="p6">
+                @Html.Partial("~/Views/Home/Faq.cshtml")
+            </div>
+            <div id="p7">
+                @Html.Partial("~/Views/Home/BkashView.cshtml")
+            </div>  
+        </div> 
+
+     </div>
+
+</div>
+  
+

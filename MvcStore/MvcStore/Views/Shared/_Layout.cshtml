@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="~/Globe.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        
+        @Styles.Render("~/Content/bootstrapcss/bootstrap.css")   
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr") 
+      
+       
+    </head>
+    <body onload="geoloc()">
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("My Store", "Index", "Home")
+                          <img src="~/Globe.ico" class="allclass" id="logo" alt="Globe">
+                    </p>
+                    <h3>Welcome to MyStore.com!</h3>
+                 
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        <h5>HelpLine:+8801933167310</h5>
+                        @Html.Partial("_LoginPartial")                      
+                    </section>
+                           
+                    <nav>
+                        <div class="navbar navbar-fixed-top">
+                            <div class="navbar-inner">
+                                <a class="brand" href="#">My Store</a>
+                                <ul class="nav">
+                                    <li class="active"><a href="/">Home</a></li>
+                                    <li>@Html.ActionLink("Help", "Help", "Home")</li>
+                                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                                    <li>@Html.ActionLink("Store", "Index", "Store")</li>
+                                    <li>@{Html.RenderAction("CartSummary", "ShoppingCart");}</li>
+                                </ul>
+                                <form class="navbar-form pull-right">
+                                    <input type="text" class="span3" placeholder="Search">
+                                    <button type="submit" class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+
+         <marquee behavior="scroll" bgcolor="#00CCCC" loop="-1" width="100%">Welcome to MyStore.com.Our service only for your satisfaction.Please contact with us 
+            to know about our product call us +8801933167310.You can send email at shahriar.setu@gmail.com.Thank you for joining us.
+        </marquee>
+
+            @RenderSection("featured", required: false)
+            @RenderSection("Styles", false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+       
+    
+        <footer>
+            <div class="content-wrapper">
+                <div class="center">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

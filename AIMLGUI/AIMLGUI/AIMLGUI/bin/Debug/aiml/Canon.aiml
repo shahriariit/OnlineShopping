@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<aiml>
+  <category>
+    <pattern>CANON</pattern>
+    <template>A brand of Photocopier</template>
+  </category>
+  <category>
+    <pattern>CANON PRODUCTS</pattern>
+    <template>
+      <get name="canon"/>
+      <get name="canon1"/>
+      <get name="canon2"/>
+      <get name="canon3"/>
+      <get name="canon4"/>
+      <get name="canon5"/>
+      <get name="canon6"/>
+      <get name="canon7"/>
+      <get name="canon8"/>
+      <get name="canon9"/>
+      <get name="canon10"/>
+      <get name="canon11"/>
+      <get name="canon12"/>
+      <get name="canon13"/>
+      <get name="canon14"/>
+      <get name="canon15"/>
+      <get name="canon16"/>
+      <get name="canon17"/>
+      <get name="canon18"/>
+      <get name="canon19"/>
+      <get name="canon20"/>
+      <get name="canon21"/>
+      <get name="canon22"/>
+      <get name="canon23"/>
+      <get name="canon24"/>
+      <get name="canon25"/>
+      <get name="canon26"/>
+      <get name="canon27"/>
+      <get name="canon28"/>
+      <get name="canon29"/>
+      <get name="canon30"/>
+      <get name="canon31"/>
+      <get name="canon32"/>
+      <get name="canon33"/>
+      <get name="canon34"/>
+      <get name="canon35"/>
+      <get name="canon36"/>
+      <get name="canon37"/>
+      <get name="canon38"/>
+      <get name="canon39"/>
+      <get name="canon40"/>
+      <get name="canon41"/>
+      <get name="canon42"/>
+      <get name="canon43"/>
+      <get name="canon44"/>
+      <get name="canon45"/>
+      <get name="canon46"/>
+      <get name="canon47"/>
+      <get name="canon48"/>
+      <get name="canon49"/>
+      <get name="canon50"/>
+      <get name="canon51"/>
+      <get name="canon52"/>
+      <get name="canon53"/>
+      <get name="canon54"/>
+      <get name="canon55"/>
+      <get name="canon56"/>
+      <get name="canon57"/>
+      <get name="canon58"/>
+      <get name="canon59"/>
+      <get name="canon60"/>
+      <get name="canon61"/>
+      <get name="canon62"/>
+      <get name="canon63"/>
+      <get name="canon64"/>
+      <get name="canon65"/>
+      <get name="canon66"/>
+      <get name="canon67"/>
+      <get name="canon68"/>
+      <get name="canon69"/>
+      <get name="canon70"/>
+      <get name="canon71"/>
+      <get name="canon72"/>
+      <get name="canon73"/>
+      <get name="canon74"/>
+      <get name="canon75"/>
+      <get name="canon76"/>
+      <get name="canon77"/>
+      <get name="canon78"/>
+      <get name="canon79"/>
+      <get name="canon80"/>
+      <think>
+        <set name="it">
+          <srai>
+            PUSH
+            <set name="topic">
+              Canon
+            </set>
+          </srai>
+        </set>
+      </think>
+    </template>
+  </category>
+  <category>
+    <pattern>Product Details</pattern>
+    <template>
+      <get name="canonbrand"/>
+      <get name="canontoner"/>
+      <get name="canonmanufacturar"/>
+      <get name="canonorigin"/>
+      <get name="canonstatus"/>
+      <get name="canontype"/>
+      <get name="canonpacking"/>
+      <get name="canondelivery"/>
+      <get name="canonparts"/>
+      <get name="canonstyle"/>
+      <get name="canonpagepertoner"/>
+      <get name="canonprice"/>
+    </template>
+  </category>
+  <category>
+    <pattern>Supplier Details</pattern>
+    <template>
+      <get name="canonsupplierid"/>
+      <get name="canonsuppliername"/>
+      <get name="canonsupplierorigin"/>
+      <get name="canonsupplierdelivery"/>
+    </template>
+  </category>
+  <category>
+    <pattern>Similar Products</pattern>
+    <template>
+      
+    </template>
+  </category>
+</aiml>

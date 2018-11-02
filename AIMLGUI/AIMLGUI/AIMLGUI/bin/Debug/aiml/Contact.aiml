@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<aiml>
+  <category>
+    <pattern>HELPLINE</pattern>
+    <template>
+      Phone:<bot name="phone"/>; email:<bot name="email"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DO YOU HAVE ANY CONTACT</pattern>
+    <template>
+      <SRAI>HELPLINE</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>DO YOU HAVE ANY CONTACT *</pattern>
+    <template>
+      <SRAI>HELPLINE</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME ANY CONTACT</pattern>
+    <template>
+      <SRAI>HELPLINE</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME ANY CONTACT *</pattern>
+    <template>
+      <SRAI>HELPLINE</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR CONTACT *</pattern>
+    <template>
+      <SRAI>HELPLINE</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR CONTACT</pattern>
+    <template>
+      <SRAI>HELPLINE</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CONTACT</pattern>
+    <template>
+      <SRAI>
+        HELPLINE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CONTACT *</pattern>
+    <template>
+      <SRAI>
+        HELPLINE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>PHONE</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOUR PHONE</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOUR PHONE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME * PHONE</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME PHONE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME PHONE</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME PHONE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE PHONE</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE PHONE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE YOUR PHONE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE YOUR PHONE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>PHONE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>MOBILE</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOUR MOBILE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOUR MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME A MOBILE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME A MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME YOUR MOBILE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME YOUR MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME MOBILE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE ME MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE MOBILE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE YOUR MOBILE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>CAN YOU GIVE YOUR MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR MOBILE</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR MOBILE *</pattern>
+    <template>
+      <SRAI>
+        MOBILE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR PHONE</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR PHONE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>GIVE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>GIVE YOUR *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>YOUR *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>PLEASE YOUR *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>PLEASE GIVE *</pattern>
+    <template>
+      <SRAI>
+        PHONE
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>PLEASE GIVE YOUR *</pattern>
+    <template>
+      <SRAI>
+        DEFINE <star/>
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>PLEASE GIVE ME YOUR *</pattern>
+    <template>
+      <SRAI>
+        DEFINE <star/>
+      </SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>EMAIL</pattern>
+    <template>
+      shahriar.setu@gmail.com
+    </template>
+  </category>
+  <category>
+    <pattern>EMAIL *</pattern>
+    <template>
+      shahriar.setu@gmail.com
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE phone</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE mobile</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE mobile number</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE contact</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE contact number</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE phone number</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE phone</pattern>
+    <template>
+      <bot name="phone"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE email</pattern>
+    <template>
+      <bot name="email"/>
+    </template>
+  </category>
+  <category>
+    <pattern>DEFINE email address</pattern>
+    <template>
+      <bot name="email"/>
+    </template>
+  </category>
+  <category>
+    <pattern>PAYMENTS</pattern>
+    <template>VISA ,Master Card,Q-cash,DBBL,Brack Bank,BKash,Bank Asia,Mobile Money</template>
+  </category>
+  <category>
+    <pattern>PAYMENTS *</pattern>
+    <template>
+      <SRAI>PAYMENTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT ARE PAYMENTS *</pattern>
+    <template>
+      <SRAI>PAYMENTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT ARE THE PAYMENTS *</pattern>
+    <template>
+      <SRAI>PAYMENTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>SHIPPING</pattern>
+    <template>
+      Surdurban Courier Service,FedEx Express,DHL
+    </template>
+  </category>
+  <category>
+    <pattern>SHIPPING *</pattern>
+    <template>
+      <SRAI>SHIPPING</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT ARE THE SHIPPING *</pattern>
+    <template>
+      <SRAI>SHIPPING</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>PAYMENT AND SHIPPING</pattern>
+    <template>
+      PAYMENTS OPTIONS: VISA ,Master Card,Q-cash,DBBL,Brack Bank,BKash,Bank Asia,Mobile Money,
+      SHIPPING OPTIONS: Surdurban Courier Service,FedEx Express,DHL
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT ARE THE PAYMENT AND SHIPPING *</pattern>
+    <template>
+      <SRAI>PAYMENT AND SHIPPING</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>IS FSB AN BANGLADESHI COMPANY</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Where is FSB’s head office located</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern> What can I buy in FS</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Are FSB products available internationally</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>How do I shop online</pattern>
+    <template>
+      please, check online manual of this website.
+    </template>
+  </category>
+  <category>
+    <pattern>How will I know if you have received my order</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern> How do I check my order status</pattern>
+    <template>
+      Please, log in on your account and check your status.
+    </template>
+  </category>
+  <category>
+    <pattern> Is it safe to use my credit card online at MyStore.com</pattern>
+    <template>
+      Yes, you can use your credit card for transaction.
+    </template>
+  </category>
+  <category>
+    <pattern>What if an item is out of stock</pattern>
+    <template>
+      We provide notification about out of stock about this product.
+    </template>
+  </category>
+  <category>
+    <pattern> Do I have to sign up for a MyStore account to buy something at MyStore.com</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Will I be charged for entry taxes in case domestic shipping</pattern>
+    <template>
+      YES, it is charged differently for various shipping service.
+    </template>
+  </category>
+  <category>
+    <pattern>How long will it take to receive my order</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Which countries do you ship to</pattern>
+    <template>
+      UK,Germany,USA,Thiland,Australia.
+    </template>
+  </category>
+  <category>
+    <pattern>Do you offer expedited shipping</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>What are the shipping cost</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Will I be charged for customer charges in case of international shipping</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Can I change my shipping address after placing my order</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>In case the delivering destination is outside the Bangladesh,will I be charged for sales tax</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>What payment method do you accept</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>When will my credit card be charged</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>What currency will my order be billed in</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Can I change my billing address</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>How do I contact customer service</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>Will you share my information with others</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>How can I cancel order</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>What is return policy</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+  <category>
+    <pattern>How do I exchange an item</pattern>
+    <template>
+      YES
+    </template>
+  </category>
+</aiml>

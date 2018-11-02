@@ -1,0 +1,14 @@
+﻿@model MvcStore.Models.ChatBot
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Message</h2>
+<h2>@ViewBag.NP</h2>
+
+@using (@Html.BeginForm())
+{
+ <p>@Html.TextAreaFor(m=>m.myBot)</p>
+ <p>@Html.TextBoxFor(m=>m.myUser)</p>   
+ <input type="submit" value="Send" class="btn btn-success"/>
+}

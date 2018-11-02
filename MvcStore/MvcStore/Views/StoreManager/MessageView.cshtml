@@ -1,0 +1,36 @@
+﻿@model IEnumerable<MvcStore.Models.Model>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+   
+}
+
+@helper Truncate(string input, int length)
+{
+    if (input.Length <= length)
+    {
+    @input
+    }
+    else
+    {
+    @input.Substring(0, length)<text>...</text>
+    }
+}
+
+<div class="tabbable" style="margin-bottom: 18px;">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab31" data-toggle="tab">New Message</a></li>
+        <li><a href="#tab32" data-toggle="tab">List Message</a></li>
+
+    </ul>
+    <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+        <div class="tab-pane active" id="tab31">
+            New Message
+        </div>
+        <div class="tab-pane" id="tab32">
+            List of Message
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/bootstrapjs/bootstrap-tab.js"></script>

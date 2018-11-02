@@ -1,0 +1,87 @@
+﻿@model MvcStore.Models.Model
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of @Html.DisplayFor(model => model.ProductName)</h2>
+
+<fieldset>
+    <legend>Model</legend>
+    <table class="tablesorter">
+    <thead>
+        <th>Topic</th>
+        <th>Details</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Brand</td>
+        <td>@Html.DisplayFor(model => model.Brand.Name)</td>
+    </tr>
+    <tr>
+        <td>Supplier</td>
+        <td>@Html.DisplayFor(model => model.Supplier.Name)</td>
+    </tr>
+    <tr>
+        <td>Toner</td>
+        <td>@Html.DisplayFor(model => model.Toner.Name)</td>
+    </tr>
+       <tr>
+        <td>Title</td>
+        <td>@Html.DisplayFor(model => model.ProductName)</td>
+    </tr>
+    <tr>
+        <td>Compitable Products</td>
+        <td>@Html.DisplayFor(model => model.CompatibleModel)</td>
+    </tr>
+    <tr>
+        <td>Manufacturer</td>
+        <td>@Html.DisplayFor(model => model.Manufacturer)</td>
+    </tr> 
+       <tr>
+        <td>Origin</td>
+        <td>@Html.DisplayFor(model => model.CountryOfOrigin)</td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td>@Html.DisplayFor(model => model.Status)</td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <td>@Html.DisplayFor(model => model.Type)</td>
+    </tr>
+       <tr>
+        <td>Packaging</td>
+        <td>@Html.DisplayFor(model => model.Packing)</td>
+    </tr>
+    <tr>
+        <td>Delivery</td>
+        <td>@Html.DisplayFor(model => model.Delivery)</td>
+    </tr>
+    <tr>
+        <td>Shipping</td>
+        <td>@Html.DisplayFor(model => model.Shipping)</td>
+    </tr>
+       <tr>
+        <td>Parts</td>
+        <td>@Html.DisplayFor(model => model.Parts)</td>
+    </tr>
+    <tr>
+        <td>Page/Toner</td>
+        <td>@Html.DisplayFor(model => model.PagePerToner)</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>@Html.DisplayFor(model => model.Price)</td>
+    </tr>
+    </tbody>
+</table>
+
+</fieldset>
+ 
+<br /> 
+  
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ModelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

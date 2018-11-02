@@ -1,0 +1,11 @@
+﻿@{
+    MvcStore.Models.CopierStoreEntities db = new MvcStore.Models.CopierStoreEntities();
+
+   var dbdata = db.Models.SqlQuery("select Title,Price from Models");
+   var myChart = new Chart(width: 600, height: 400)
+  .AddTitle("Product Sales")
+  .AddSeries(chartType: "Pie",
+     xValue: dbdata, xField: "Title",
+     yValues: dbdata, yFields: "Price")
+  .Write();
+}

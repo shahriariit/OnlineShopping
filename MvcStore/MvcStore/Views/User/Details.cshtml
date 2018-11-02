@@ -1,0 +1,32 @@
+﻿@model MvcStore.Models.UserProfile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UserProfile</legend>
+
+    <table class="tablesorter">
+        <tr>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.UserId)</td>
+            <td>@Html.DisplayFor(model => model.UserId)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.UserName)</td>
+            <td>@Html.DisplayFor(model => model.UserName)</td>
+        </tr>
+    </table>
+
+</fieldset>
+<br />
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.UserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

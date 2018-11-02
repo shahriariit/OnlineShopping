@@ -1,0 +1,50 @@
+﻿@model MvcStore.Models.OrderDetail
+
+@{
+    ViewBag.Title = "Details";
+    MvcStore.Models.CopierStoreEntities db = new MvcStore.Models.CopierStoreEntities();
+    int a = Convert.ToInt32(Session["id"]);
+    string sql = "select * from OrderDetails where OrderId='"+a+"'";
+    
+}
+
+<h2>Details</h2>
+
+<table class="tablesorter">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModelId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </th>
+      
+    </tr>
+
+@foreach (var item in db.OrderDetails.SqlQuery(sql)) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModelId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitPrice)
+        </td>
+       
+    </tr>
+}
+
+</table>
+
+ @Html.ActionLink("Back", "Manage")

@@ -1,0 +1,46 @@
+﻿@model MvcStore.Models.MailModel
+@{
+    ViewBag.Title = "Email";
+  
+}
+
+<h2>Send Mail</h2>
+<fieldset>
+    <legend>Send Email</legend>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+
+        <table>
+            <tr>
+                <td><b>From:</b></td>
+                <td>@Html.TextBoxFor(m => m.From,new { type = "email",@placeholder = "Email" })</td>
+            </tr>
+            <tr>
+                <td><b>To:</b></td>
+                <td>@Html.TextBoxFor(m => m.To,new { @Value="shahriar.setu@gmail.com",@readonly="true" })</td>
+            </tr>
+            <tr>
+                <td><b>Subject:</b></td>
+                <td>@Html.TextBoxFor(m => m.Subject)</td>
+            </tr>
+            <tr>
+                <td><b>Body:</b></td>
+                <td>@Html.TextAreaFor(m => m.Body,new { @style = "resize:none; width:309px; height:200px;"})</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Send" class="btn btn-success"/>
+                </td>
+            </tr>
+        </table>
+        
+       
+    } 
+ 
+</fieldset>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

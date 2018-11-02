@@ -1,0 +1,16 @@
+﻿@model MvcStore.Models.Model
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete Confirmation</h2>
+
+<h3>Are you sure you want to delete <strong>@Model.ProductName</strong>?</h3>
+
+@using (Html.BeginForm()) {
+    <p>
+        <input class="btn btn-warning" type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

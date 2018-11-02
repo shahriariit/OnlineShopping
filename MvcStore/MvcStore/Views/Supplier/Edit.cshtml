@@ -1,0 +1,67 @@
+﻿@model MvcStore.Models.Supplier
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Supplier</legend>
+
+        @Html.HiddenFor(model => model.SupplierId)
+
+        <table>
+            <tr>
+                <td>@Html.LabelFor(model => model.Name)</td>
+                <td>
+                    @Html.EditorFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Origin)</td>
+                <td>
+                    @Html.EditorFor(model => model.Origin)
+                    @Html.ValidationMessageFor(model => model.Origin)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Manufacturer)</td>
+                <td>
+                    @Html.EditorFor(model => model.Manufacturer)
+                    @Html.ValidationMessageFor(model => model.Manufacturer)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Delivery)</td>
+                <td>
+                    @Html.EditorFor(model => model.Delivery)
+                    @Html.ValidationMessageFor(model => model.Delivery)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Email)</td>
+                <td>
+                    @Html.EditorFor(model => model.Email)
+                    @Html.ValidationMessageFor(model => model.Email)
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <input class="btn btn-warning" type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

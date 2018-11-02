@@ -1,0 +1,37 @@
+﻿@model MvcStore.Models.Brand
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Brand</legend>
+    <table class="tablesorter">
+        <thead>
+             <th>Name</th>
+             <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Name)</td>
+                <td>
+                    @Html.DisplayFor(model => model.Name)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Description)</td>
+                <td>
+                    @Html.DisplayFor(model => model.Description)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</fieldset>
+<br />
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.BrandId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

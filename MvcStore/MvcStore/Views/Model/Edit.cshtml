@@ -1,0 +1,175 @@
+﻿@model MvcStore.Models.Model
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Product</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Model</legend>
+
+        @Html.HiddenFor(model => model.ModelId)
+
+        <table>
+            <tr>
+                <td>@Html.LabelFor(model => model.BrandId, "Brand")</td>
+                <td>
+
+                    @Html.DropDownList("BrandId", String.Empty)
+                    @Html.ValidationMessageFor(model => model.BrandId)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.SupplierId, "Supplier")</td>
+                <td>
+
+                    @Html.DropDownList("SupplierId", String.Empty)
+                    @Html.ValidationMessageFor(model => model.SupplierId)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.TonerId, "Toner")</td>
+                <td>
+
+                    @Html.DropDownList("TonerId", String.Empty)
+                    @Html.ValidationMessageFor(model => model.TonerId)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.ProductName)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.ProductName)
+                    @Html.ValidationMessageFor(model => model.ProductName)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.CompatibleModel)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.CompatibleModel)
+                    @Html.ValidationMessageFor(model => model.CompatibleModel)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Manufacturer)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Manufacturer)
+                    @Html.ValidationMessageFor(model => model.Manufacturer)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.CountryOfOrigin)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.CountryOfOrigin)
+                    @Html.ValidationMessageFor(model => model.CountryOfOrigin)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Status)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Status)
+                    @Html.ValidationMessageFor(model => model.Status)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Type)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Type)
+                    @Html.ValidationMessageFor(model => model.Type)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Packing)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Packing)
+                    @Html.ValidationMessageFor(model => model.Packing)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Delivery)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Delivery)
+                    @Html.ValidationMessageFor(model => model.Delivery)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Shipping)</td>
+                <td>
+                    @Html.EditorFor(model => model.Shipping)
+                    @Html.ValidationMessageFor(model => model.Shipping)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Parts)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Parts)
+                    @Html.ValidationMessageFor(model => model.Parts)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.PagePerToner)</td>
+                <td>
+                    @Html.EditorFor(model => model.PagePerToner)
+                    @Html.ValidationMessageFor(model => model.PagePerToner)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Price)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Price)
+                    @Html.ValidationMessageFor(model => model.Price)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.ModelUrl)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.ModelUrl)
+                    @Html.ValidationMessageFor(model => model.ModelUrl)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.LabelFor(model => model.ModelZoomUrl)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.ModelZoomUrl)
+                    @Html.ValidationMessageFor(model => model.ModelZoomUrl)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.LabelFor(model => model.ModelSmallUrl)</td>
+                <td>
+                    @Html.EditorFor(model => model.ModelSmallUrl)
+                    @Html.ValidationMessageFor(model => model.ModelSmallUrl)
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <input class="btn btn-warning" type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

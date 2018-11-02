@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<aiml>
+  <category>
+    <pattern>
+      WHAT IS MYSTORE
+    </pattern>
+    <template>
+      <think>
+        <set name="it">
+          <srai>
+            PUSH
+            <set name="topic">
+              Mystore
+            </set>
+          </srai>
+        </set>
+      </think>
+      My store is an online shopping site.
+    </template>
+  </category>
+</aiml>

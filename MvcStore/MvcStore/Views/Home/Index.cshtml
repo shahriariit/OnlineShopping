@@ -1,0 +1,48 @@
+﻿@model List<MvcStore.Models.Model>
+@{
+    ViewBag.Title = "My Store";
+    
+    
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+        <div class="span2">
+            @{Html.RenderAction("BrandMenu", "Store");} 
+        </div>
+
+        <div class="span10">
+
+            <h1 id="slidehead">Make Life Easy</h1>
+            <br />
+
+            <div>
+                <img src="/Images/2.jpg" class="allclass" alt="Photocopier Machine">   
+            </div>
+            
+            
+            <h2><p class="blink">Latest</p> Products</h2>
+           
+            <link href="~/Content/StyleCss/itemlist.css" rel="stylesheet" />
+
+            <ul class="item-list">
+                @foreach (var item in Model)
+                {
+                    <li><a href="@Url.Action("Details", "Store", new { id = item.ModelId })">
+                        <img alt="@item.ProductName" src="@item.ModelUrl" />
+                        <br />
+                        @item.ProductName
+                        <br />
+                        @item.Price
+                        <br />
+                        <span>BUY NOW</span> 
+                    </li>
+                }
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>

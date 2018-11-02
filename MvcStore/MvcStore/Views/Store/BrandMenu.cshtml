@@ -1,0 +1,19 @@
+﻿@model IEnumerable<MvcStore.Models.Brand>
+
+<ul  class="nav nav-tabs nav-stacked" >
+
+    <h2>Brands<img src="/Images/new-menu.gif" class="img-rounded" title="IMAGE TITLE" > </h2>
+
+    @foreach (var brand in Model)
+    {
+       
+        <li>@Html.ActionLink(brand.Name, 
+                "Browse", "Store", 
+                new { Brand = brand.Name }, null)
+        </li>
+         
+    }
+</ul> 
+
+
+<!--<img src="Content/Images/cash-on-delivery.gif" class="img-rounded" title="IMAGE TITLE" > --> 

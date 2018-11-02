@@ -1,0 +1,190 @@
+﻿@model MvcStore.Models.Model
+
+@{
+    ViewBag.Title = "Create";
+
+    List<SelectListItem> listItems = new List<SelectListItem>();
+    listItems.Add(new SelectListItem
+    {
+        Text = "New",
+        Value = "New",
+        Selected = true
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "Old",
+        Value = "Old"
+
+    });
+
+    List<SelectListItem> typeListItems = new List<SelectListItem>();
+    typeListItems.Add(new SelectListItem
+    {
+        Text = "Toner base Cartidge",
+        Value = "Toner base Cartidge",
+        Selected = true
+    });
+    typeListItems.Add(new SelectListItem
+    {
+        Text = "Toner ,Developer and Drum base Cartidge",
+        Value = "Toner ,Developer and Drum base Cartidge"
+
+    });
+    typeListItems.Add(new SelectListItem
+    {
+        Text = "Developer base Cartidge",
+        Value = "Developer base Cartidge"
+    });
+    typeListItems.Add(new SelectListItem
+    {
+        Text = "Drum base Cartidge",
+        Value = "Drum base Cartidge"
+
+    });
+    
+}
+
+<h2>Add Product</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Model</legend>
+        <table>
+            <tr>
+                <td>@Html.LabelFor(model => model.BrandId, "Brand")</td>
+                <td>@Html.DropDownList("BrandId", String.Empty)
+                    @Html.ValidationMessageFor(model => model.BrandId)
+
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.SupplierId, "Supplier")</td>
+                <td>
+                    @Html.DropDownList("SupplierId", String.Empty)
+                    @Html.ValidationMessageFor(model => model.SupplierId)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.TonerId, "Toner ")</td>
+                <td>@Html.DropDownList("TonerId", String.Empty)
+                    @Html.ValidationMessageFor(model => model.TonerId)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.ProductName)</td>
+                <td>
+                    @Html.EditorFor(model => model.ProductName)
+                    @Html.ValidationMessageFor(model => model.ProductName)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.CompatibleModel)</td>
+
+                <td>
+                    @Html.TextAreaFor(model => model.CompatibleModel, new { @style = "resize:none; width:309px; height:150px;"})
+                    @Html.ValidationMessageFor(model => model.CompatibleModel)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Manufacturer)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Manufacturer)
+                    @Html.ValidationMessageFor(model => model.Manufacturer)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.CountryOfOrigin)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.CountryOfOrigin)
+                    @Html.ValidationMessageFor(model => model.CountryOfOrigin)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Status)</td>
+                <td>
+
+                    @Html.DropDownListFor(model => model.Status, listItems, new { @style="width:309px"})
+                    @Html.ValidationMessageFor(model => model.Status)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Type)</td>
+                <td>
+
+                    @Html.DropDownListFor(model => model.Type, typeListItems, new { @style="width:309px"})
+                    @Html.ValidationMessageFor(model => model.Type)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Packing)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Packing)
+                    @Html.ValidationMessageFor(model => model.Packing)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Delivery)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Delivery)
+                    @Html.ValidationMessageFor(model => model.Delivery)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Shipping)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Shipping)
+                    @Html.ValidationMessageFor(model => model.Shipping)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Parts)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Parts)
+                    @Html.ValidationMessageFor(model => model.Parts)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.PagePerToner)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.PagePerToner)
+                    @Html.ValidationMessageFor(model => model.PagePerToner)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Price)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Price)
+                    @Html.ValidationMessageFor(model => model.Price)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.ModelUrl)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.ModelUrl)
+                    @Html.ValidationMessageFor(model => model.ModelUrl)
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <input class="btn btn-warning" type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

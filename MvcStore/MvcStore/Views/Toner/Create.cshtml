@@ -1,0 +1,36 @@
+﻿@model MvcStore.Models.Toner
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add Required Toners</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Toner</legend>
+        <table>
+            <tr>
+                <td>@Html.LabelFor(model => model.Name)</td>
+                <td>
+                  @Html.TextAreaFor(model => model.Name, new { @style="resize:none;width:300px;height:150px"})
+                  @Html.ValidationMessageFor(model => model.Name)
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <input class="btn btn-warning" type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+<br />
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Help";
+}
+
+@section Scripts{
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.js")" type="text/javascript"></script>
+            <script type='text/javascript'>
+                $(document).ready(function () {
+
+                    $("#p1").show();
+                    $("#p2").hide();
+                    $("#p3").hide();
+                    $("#p4").hide();
+                    
+
+                    $("#a1").click(function () {
+                        $("#p1").show();
+                        $("#p2").hide();
+                        $("#p3").hide();
+                        $("#p4").hide();
+                       
+                    });
+
+
+                    $("#a2").click(function () {
+                        $("#p1").hide();
+                        $("#p2").show();
+                        $("#p3").hide();
+                        $("#p4").hide();
+                       
+                    });
+
+                    $("#a3").click(function () {
+                        $("#p1").hide();
+                        $("#p2").hide();
+                        $("#p3").show();
+                        $("#p4").hide();
+                       
+                    });
+
+                    $("#a4").click(function () {
+                        $("#p1").hide();
+                        $("#p2").hide();
+                        $("#p3").hide();
+                        $("#p4").show();
+                        
+                    });
+
+                   
+                });
+
+             </script> 
+    
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+        <div class="span2">
+            @Html.Partial("~/Views/Home/HelpMenu.cshtml")
+        </div>
+
+        <div  class="span10"> 
+
+            <div id="p1">This is paragraph 1</div>
+            <div id="p2">This is paragraph 2</div> 
+            <div id="p3">
+                @Html.Partial("~/Views/Home/Contact.cshtml")
+            </div> 
+            <div id="p4">
+                @Html.Partial("~/Views/Home/CustomerMessage.cshtml")
+            </div>
+             
+        </div> 
+
+        
+   </div>
+
+</div>

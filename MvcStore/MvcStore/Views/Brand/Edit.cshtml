@@ -1,0 +1,48 @@
+﻿@model MvcStore.Models.Brand
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Brand</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Brand</legend>
+
+        @Html.HiddenFor(model => model.BrandId)
+
+        <table>
+            <tr>
+                <td>@Html.LabelFor(model => model.Name)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Description)</td>
+                <td>
+
+                    @Html.EditorFor(model => model.Description)
+                    @Html.ValidationMessageFor(model => model.Description)
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <input class="btn btn-warning" type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+<br />
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

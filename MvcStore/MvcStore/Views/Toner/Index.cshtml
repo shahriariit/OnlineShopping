@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MvcStore.Models.Toner>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+        <div class="span2">
+            @Html.Partial("~/Views/Toner/TonerMenu.cshtml")
+        </div>
+
+        <div class="span10">
+            <p>
+                @Html.ActionLink("Create New", "Create")
+            </p>
+            <table class="tablesorter">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.TonerId }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.TonerId }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.TonerId })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+    </div>
+</div>
+

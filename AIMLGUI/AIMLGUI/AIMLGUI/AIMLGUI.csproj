@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF2ACC71-2E13-4364-B380-3E3A9146D45B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AIMLGUI</RootNamespace>
+    <AssemblyName>AIMLGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AIMLbot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AIMLbot\AIMLbot\bin\Debug\AIMLbot.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aimlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aimlForm.Designer.cs">
+      <DependentUpon>aimlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aimlgui.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="aimlForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>aimlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="bin\Debug\AIMLGUI.exe.config" />
+    <None Include="bin\Debug\aiml\AI.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\Atomic.aiml" />
+    <None Include="bin\Debug\aiml\Biography.aiml" />
+    <None Include="bin\Debug\aiml\Bot.aiml" />
+    <None Include="bin\Debug\aiml\Botmaster.aiml" />
+    <None Include="bin\Debug\aiml\Client.aiml" />
+    <None Include="bin\Debug\aiml\Computers.aiml" />
+    <None Include="bin\Debug\aiml\Contact.aiml" />
+    <None Include="bin\Debug\aiml\CustomTagTest.aiml" />
+    <None Include="bin\Debug\aiml\Default.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\Emotion.aiml" />
+    <None Include="bin\Debug\aiml\Food.aiml" />
+    <None Include="bin\Debug\aiml\Geography.aiml" />
+    <None Include="bin\Debug\aiml\History.aiml" />
+    <None Include="bin\Debug\aiml\Inquiry.aiml" />
+    <None Include="bin\Debug\aiml\Interjection.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\IU.aiml" />
+    <None Include="bin\Debug\aiml\Knowledge.aiml" />
+    <None Include="bin\Debug\aiml\Literature.aiml" />
+    <None Include="bin\Debug\aiml\Money.aiml" />
+    <None Include="bin\Debug\aiml\Movies.aiml" />
+    <None Include="bin\Debug\aiml\Music.aiml" />
+    <None Include="bin\Debug\aiml\MyStore.aiml" />
+    <None Include="bin\Debug\aiml\OrderProcess.aiml" />
+    <None Include="bin\Debug\aiml\Payment.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\Philosophy.aiml" />
+    <None Include="bin\Debug\aiml\Predicates.aiml" />
+    <None Include="bin\Debug\aiml\Products.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\Canon.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\Reduce.aiml" />
+    <None Include="bin\Debug\aiml\Reductions.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\Salutations.aiml" />
+    <None Include="bin\Debug\aiml\Science.aiml" />
+    <None Include="bin\Debug\aiml\Stack.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\aiml\Stories.aiml" />
+    <None Include="bin\Debug\aiml\That.aiml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Release\aiml\AI.aiml" />
+    <None Include="bin\Release\aiml\Atomic.aiml" />
+    <None Include="bin\Release\aiml\Biography.aiml" />
+    <None Include="bin\Release\aiml\Bot.aiml" />
+    <None Include="bin\Release\aiml\Botmaster.aiml" />
+    <None Include="bin\Release\aiml\Client.aiml" />
+    <None Include="bin\Release\aiml\Computers.aiml" />
+    <None Include="bin\Release\aiml\Default.aiml" />
+    <None Include="bin\Release\aiml\Emotion.aiml" />
+    <None Include="bin\Release\aiml\Food.aiml" />
+    <None Include="bin\Release\aiml\Geography.aiml" />
+    <None Include="bin\Release\aiml\History.aiml" />
+    <None Include="bin\Release\aiml\Inquiry.aiml" />
+    <None Include="bin\Release\aiml\Interjection.aiml" />
+    <None Include="bin\Release\aiml\IU.aiml" />
+    <None Include="bin\Release\aiml\Knowledge.aiml" />
+    <None Include="bin\Release\aiml\Literature.aiml" />
+    <None Include="bin\Release\aiml\Money.aiml" />
+    <None Include="bin\Release\aiml\Movies.aiml" />
+    <None Include="bin\Release\aiml\Music.aiml" />
+    <None Include="bin\Release\aiml\Philosophy.aiml" />
+    <None Include="bin\Release\aiml\Predicates.aiml" />
+    <None Include="bin\Release\aiml\Reduce.aiml" />
+    <None Include="bin\Release\aiml\Reductions.aiml" />
+    <None Include="bin\Release\aiml\Salutations.aiml" />
+    <None Include="bin\Release\aiml\Science.aiml" />
+    <None Include="bin\Release\aiml\Stack.aiml" />
+    <None Include="bin\Release\aiml\Stories.aiml" />
+    <None Include="bin\Release\aiml\That.aiml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewInformation.Designer.cs">
+      <DependentUpon>ViewInformation.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.txt" />
+    <Content Include="bin\Debug\AIMLGUI.exe" />
+    <Content Include="bin\Debug\AIMLGUI.pdb" />
+    <Content Include="bin\Debug\config\Canons.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\Debug\config\DefaultPredicates.xml" />
+    <Content Include="bin\Debug\config\GenderSubstitutions.xml" />
+    <Content Include="bin\Debug\config\Person2Substitutions.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\Debug\config\PersonSubstitutions.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\Debug\config\Settings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\Debug\config\SettingsBad.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\Debug\config\SettingsValidIncorrect.xml" />
+    <Content Include="bin\Debug\config\Splitters.xml" />
+    <Content Include="bin\Debug\config\Substitutions.xml" />
+    <Content Include="bin\Release\About.txt" />
+    <Content Include="bin\Release\AIMLbot.dll" />
+    <Content Include="bin\Release\AIMLbot.pdb" />
+    <Content Include="bin\Release\AIMLGUI.exe" />
+    <Content Include="bin\Release\AIMLGUI.pdb" />
+    <Content Include="bin\Release\AIMLGUI.vshost.exe" />
+    <Content Include="bin\Release\config\DefaultPredicates.xml" />
+    <Content Include="bin\Release\config\GenderSubstitutions.xml" />
+    <Content Include="bin\Release\config\Person2Substitutions.xml" />
+    <Content Include="bin\Release\config\PersonSubstitutions.xml" />
+    <Content Include="bin\Release\config\Settings.xml" />
+    <Content Include="bin\Release\config\SettingsBad.xml" />
+    <Content Include="bin\Release\config\SettingsValidIncorrect.xml" />
+    <Content Include="bin\Release\config\Splitters.xml" />
+    <Content Include="bin\Release\config\Substitutions.xml" />
+    <Content Include="bin\Release\License.txt" />
+    <Content Include="License.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

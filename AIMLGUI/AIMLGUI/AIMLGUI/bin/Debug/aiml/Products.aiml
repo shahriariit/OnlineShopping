@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<aiml>
+  <category>
+    <pattern>ONLINE</pattern>
+    <template></template>
+  </category>
+  <category>
+    <pattern>WHAT IS ONLINE</pattern>
+    <template></template>
+  </category>
+  <category>
+    <pattern>SHOPPING</pattern>
+    <template></template>
+  </category>
+  <category>
+    <pattern>WHAT IS SHOPPING</pattern>
+    <template></template>
+  </category>
+  <category>
+    <pattern>WHAT IS ONLINE SHOPPING</pattern>
+    <template>One kinds of Shopping which is got through online</template>
+  </category>
+  <category>
+    <pattern>WHAT IS THE NAME OF THIS WEBSITE</pattern>
+    <template>MyStore</template>
+  </category>
+  <category>
+    <pattern>PRODUCTS</pattern>
+    <template>Photocopier Machines</template>
+  </category>
+  <category>
+    <pattern>WHAT KINDS OF THINGS THIS SITE CONTAIN</pattern>
+    <template>
+      <SRAI>PRODUCTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT KINDS OF PRODUCTS</pattern>
+    <template>
+      <SRAI>PRODUCTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT PRODUCTS</pattern>
+    <template>
+      <SRAI>PRODUCTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT THINGS</pattern>
+    <template>
+      <SRAI>PRODUCTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT KINDS OF THINGS</pattern>
+    <template>
+      <SRAI>PRODUCTS</SRAI>
+    </template>
+  </category>
+  <category>
+    <pattern>BRANDS</pattern>
+    <template>4 Brands; Canon ,Sharp ,Ricoh,Toshiba</template>
+  </category>
+  <category>
+    <pattern>HOW MANY NUMBER OF BRANDS IT CONTAIN</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT ARE THE BRANDS</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TELL ME SOME BRANDS</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TELL ME SOME KINDS OF BRANDS</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TELL ME THE BRANDS OF PHOTOCOPIER</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>BRANDS OF PHOTOCOPIER</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AVAILABLE BRANDS OF PHOTOCOPIER</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AVAILABLE BRANDS</pattern>
+    <template>
+      <srai>BRANDS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>PRIZE OF MACHINES</pattern>
+    <template>please, explain the brands of photocopier</template>
+  </category>
+  <category>
+    <pattern>PRIZE OF PHOTOCOPIER MACHINES</pattern>
+    <template>please, explain the brands of photocopier</template>
+  </category>
+  <category>
+    <pattern>WHAT ARE THE PRIZE OF PHOTOCOPIER MACHINES</pattern>
+    <template>please, explain the brands of photocopier</template>
+  </category>
+  <category>
+    <pattern>PHOTOCOPIER MACHINES</pattern>
+    <template>
+      <bot name="product"/>
+    </template>
+  </category>
+</aiml>
+

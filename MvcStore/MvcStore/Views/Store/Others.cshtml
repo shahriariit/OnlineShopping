@@ -1,0 +1,28 @@
+﻿@{
+    MvcStore.Models.CopierStoreEntities db = new MvcStore.Models.CopierStoreEntities(); 
+    int a = Convert.ToInt32(Session["brandId"]);
+    string sql = "SELECT TOP 5 * FROM Models where BrandId="+a+";";   
+ }
+
+
+<link href="~/Content/StyleCss/itemlist.css" rel="stylesheet" /> 
+
+<h2>More Products</h2>
+
+<ul class="item-list">
+
+@foreach (var item in db.Models.SqlQuery(sql))
+{
+      <li >
+          <a href="@Url.Action("Details", new { id = item.ModelId })">
+              <img alt="@item.ProductName" src="@item.ModelUrl" />
+              <br />
+              <span>@item.ProductName</span>
+              <br />
+
+          </a>
+
+      </li>
+}
+
+</ul>
